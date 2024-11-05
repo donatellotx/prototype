@@ -1,0 +1,53 @@
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Taniti Island</title> 
+    </head>
+    <body>
+        <!-- <div class="banner"> -->
+            <!-- HEADER -->
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="lodging.html">LODGING</a></li>
+                    <li><a href="dining.html">DINING</a></li>
+                    <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+                    <li><a href="transportation.html">TRANSPORTATION</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index.html">Taniti Island</a></li>
+                    <li class="mobileView"><a href="index.html">HOME</a></li>
+                    <li class="mobileView"><a href="lodging.html">LODGING</a></li>
+                    <li class="mobileView"><a href="dining.html">DINING</a></li>
+                    <li class="mobileView"><a href="entertainment.html">ENTERTAINMENT</a></li>
+                    <li class="mobileView"><a href="transportation.html">TRANSPORTATION</a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar(){
+                   const sidebar = document.querySelector('.sidebar')
+                   sidebar.style.display = 'flex' 
+                }
+                function hideSidebar(){
+                   const sidebar = document.querySelector('.sidebar')
+                   sidebar.style.display = 'none'
+                }
+            </script>
+            <div class="content">
+                <h1>TRANSPORTATION</h1>
+                <p>FIND ALL OF YOUR TRANSPORTATION NEEDS HERE</p>
+                <section>Almost all visitors arrive to Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the next few years. Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport. Bikes and helmets are available to rent from several vendors (helmets are required by law). Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing: this area is easy to explore on foot. Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</section>
+                
+                <div>
+                    <button type="button" onclick="document.location='book.html'"><span></span>BOOK NOW</button>
+                    <button type="button" onclick="document.location='contact.html'"><span></span>CONTACT US</button>
+                </div>
+            </div>
+        <!-- </div> -->
+        
+    </body>
+</html>

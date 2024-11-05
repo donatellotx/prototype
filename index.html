@@ -1,0 +1,61 @@
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Taniti Island</title> 
+    </head>
+    <body>
+        <!-- <div class="banner"> -->
+            <!-- HEADER -->
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="lodging.html">LODGING</a></li>
+                    <li><a href="dining.html">DINING</a></li>
+                    <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+                    <li><a href="transportation.html">TRANSPORTATION</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index.html">Taniti Island</a></li>
+                    <li class="mobileView"><a href="index.html">HOME</a></li>
+                    <li class="mobileView"><a href="lodging.html">LODGING</a></li>
+                    <li class="mobileView"><a href="dining.html">DINING</a></li>
+                    <li class="mobileView"><a href="entertainment.html">ENTERTAINMENT</a></li>
+                    <li class="mobileView"><a href="transportation.html">TRANSPORTATION</a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar(){
+                   const sidebar = document.querySelector('.sidebar')
+                   sidebar.style.display = 'flex' 
+                }
+                function hideSidebar(){
+                   const sidebar = document.querySelector('.sidebar')
+                   sidebar.style.display = 'none'
+                }
+            </script>
+            <div class="content">
+                <h1>TANITI ISLAND</h1>
+                <p>THE PERFEFCT ISLAND GETAWAY FULL OF ADVENTURE</p>
+                <section>Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano. Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most the Tanitian economy was dominated by fishing or agriculture. Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</section>
+                <div>
+                    <button type="button" onclick="document.location='book.html'"><span></span>BOOK NOW</button>
+                    <button type="button" onclick="document.location='contact.html'"><span></span>CONTACT US</button>
+                </div>
+        
+                <!-- IMAGE SLIDER -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img src="prototype/assets/home1.avif" alt="home1"></div>
+                        <div class="carousel-slide"><img src="prototype/assets/background.jpg" alt="home2"></div>
+                        <div class="carousel-slide"><img src="prototype/assets/sunset.jpg" alt="home3"></div>
+                    </div>
+                </div>      
+            </div>
+                     
+        <!-- </div> --> 
+    </body>
+</html>
