@@ -1,0 +1,63 @@
+<html lang="en-us">
+    <html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="prototype/pages/style.css">
+        <title>Taniti Island</title> 
+    </head>
+    <body>
+        <!-- <div class="banner"> -->
+            <!-- HEADER -->
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="prototype/pages/index.html">HOME</a></li>
+                    <li><a href="prototype/pages/lodging.html">LODGING</a></li>
+                    <li><a href="prototype/pages/dining.html">DINING</a></li>
+                    <li><a href="prototype/pages/entertainment.html">ENTERTAINMENT</a></li>
+                    <li><a href="prototype/pages/transportation.html">TRANSPORTATION</a></li>
+                </ul>
+                <ul>
+                    <li><a href="prototype/pages/index.html">Taniti Island</a></li>
+                    <li class="mobileView"><a href="prototype/pages/index.html">HOME</a></li>
+                    <li class="mobileView"><a href="prototype/pages/lodging.html">LODGING</a></li>
+                    <li class="mobileView"><a href="prototype/pages/dining.html">DINING</a></li>
+                    <li class="mobileView"><a href="prototype/pages/entertainment.html">ENTERTAINMENT</a></li>
+                    <li class="mobileView"><a href="prototype/pages/transportation.html">TRANSPORTATION</a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar(){
+                   const sidebar = document.querySelector('.sidebar')
+                   sidebar.style.display = 'flex' 
+                }
+                function hideSidebar(){
+                   const sidebar = document.querySelector('.sidebar')
+                   sidebar.style.display = 'none'
+                }
+            </script>
+            <div class="content">
+                <h1>DINING</h1>
+                <p>EAT WELL DURING YOUR STAY</p>
+                <section>Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.
+                    Taniti also has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day. 
+                    </section>
+                    <div>
+                        <button type="button" onclick="document.location='prototype/pages/book.html'"><span></span>BOOK NOW</button>
+                        <button type="button" onclick="document.location='prototype/pages/contact.html'"><span></span>CONTACT US</button>
+                    </div>
+                 <!-- IMAGE SLIDER -->
+                 <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img src="prototype/assets/food1.jpg" alt="food1"></div>
+                        <div class="carousel-slide"><img src="prototype/assets/food2.jpg" alt="food2"></div>
+                        <div class="carousel-slide"><img src="prototype/assets/food3.jpg" alt="food3"></div>
+                    </div>
+                </div>      
+            </div>
+        <!-- </div> -->
+        
+    </body>
+</html>
